@@ -3,7 +3,7 @@
     <b-navbar class="nav" toggleable="lg" type="dark">
       <b-navbar-brand href="#">Pokemon Application</b-navbar-brand>
       <div class="logout">
-        <button class="logout btn btn-danger" @click.prevent="logout">
+        <button hidden class="logout btn btn-danger" @click.prevent="logout">
           Logout
         </button>
       </div>
