@@ -3,12 +3,12 @@
     <b-navbar class="nav" toggleable="lg" type="dark">
       <b-navbar-brand href="#">Pokemon Application</b-navbar-brand>
       <div class="logout">
-        <button hidden class="logout btn btn-danger" @click.prevent="logout">
+        <button class="logout btn btn-danger" @click.prevent="logout">
           Logout
         </button>
       </div>
       <div>
-        <button class="btn btn-primary" @click.prevent="editProfile">
+        <button hidden class="btn btn-primary" @click.prevent="editProfile">
           Edit Profile
         </button>
         <edit-user></edit-user>
