@@ -1,11 +1,7 @@
 <template>
   <div>
     <div>
-      <button class="btn btn-danger" @click.prevent="logout">Logout</button>
-      <button hidden class="btn btn-primary" @click.prevent="editProfile">
-        Edit Profile
-      </button>
-      <edit-profile></edit-profile>
+      <nav-bar></nav-bar>
     </div>
     <pokemon-list :imgurl="imgurl" />
   </div>
@@ -14,12 +10,16 @@
 <script>
 import PokemonList from "./PokemonList.vue";
 import editUser from "./modals/EditUserModal.vue";
+import NavBar from "./Navbar.vue";
 export default {
   data() {
     return {
       imgurl:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/",
     };
+  },
+  beforeCreate: function () {
+    document.body.className = "home";
   },
   mounted() {
     console.log("Component mounted.");
@@ -43,6 +43,7 @@ export default {
   components: {
     "edit-profile": editUser,
     "pokemon-list": PokemonList,
+    "nav-bar": NavBar,
   },
 };
 </script>

@@ -9,8 +9,8 @@
     justify-content: space-between;
     box-shadow: 0 0 20px 6px #090b6f85;
     /* background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%,); */
-    background-color: transparent;
-    /* background-color: white; */
+    /* background-color: transparent; */
+    background-color: white;
 }
 
 .form-register {
@@ -24,8 +24,8 @@
     justify-content: space-between;
     box-shadow: 0 0 20px 6px #090b6f85;
     /* background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%,); */
-    background-color: transparent;
-    /* background-color: white; */
+    /* background-color: transparent; */
+    background-color: white;
 }
 
 .form:hover {
@@ -35,8 +35,17 @@
 html {
     height: 100%;
 }
-body {
+body.login {
     background-image: url(https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+}
+
+body.home {
+    background-color: #0B504F;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;

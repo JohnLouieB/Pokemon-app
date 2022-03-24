@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -30,9 +31,8 @@ class UserController extends Controller
     }
 
     public function getUser(Request $request) {
-        $id = $request->user();
-        dd($id);
-        $user = User::findorFail($id);  
+        $user = Auth::user();
+        $id = Auth::id();
         return response()->json([data=>$user]);
     }
 }
