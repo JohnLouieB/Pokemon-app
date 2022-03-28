@@ -91,7 +91,7 @@ export default {
 
   methods: {
     getItems() {
-      axios.get("http://127.0.0.1:8000/api/pokemon_item").then((resp) => {
+      axios.get("http://localhost:8000/api/pokemon_item").then((resp) => {
         this.nxturl = resp.data.next;
         this.count = resp.data.count;
         resp.data.results.forEach((element) => {

@@ -14,11 +14,11 @@ export default {
       user: [],
     };
   },
-  mounted() {
-    axios.get("http://127.0.0.1:8000/api/user").then((res) => {
-      this.user = res.data;
-    });
-    console.log(this.user);
-  },
+  // mounted() {
+  //   axios.get("http://localhost:8000/api/user").then((res) => {
+  //     this.user = res.data;
+  //   });
+  //   console.log(this.user);
+  // },
 };
 </script>
