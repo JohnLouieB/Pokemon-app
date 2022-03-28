@@ -6,6 +6,7 @@
     - rename newly copied .env.example into .env
     - composer install
     - php artisan key:generate
+    - php artisan migrate
     - php artisan serve
     - type `localhost:8000` in your browser
 
